@@ -1,0 +1,82 @@
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e0e0e0;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #e0e0e0;
+        box-shadow: 9px 9px 16px #bebebe, -9px -9px 16px #ffffff;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 15px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+        transition: all 0.3s ease;
+      }
+      .navbar a:hover {
+        box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+      }
+      .menu {
+        display: flex;
+        gap: 15px;
+      }
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+      .menu-toggle div {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 4px 0;
+      }
+      @media (max-width: 768px) {
+        .menu {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+        }
+        .menu.active {
+          display: flex;
+        }
+        .menu-toggle {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Logo</a>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+    </body>
