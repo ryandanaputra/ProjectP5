@@ -23,32 +23,7 @@
             <i class='bx bx-search'></i>
             <input type="search" name="search" id="search">
         </div>
-        <div class="category-header">
-            <div class="category-card">
-                <div class="category-card-img">
-                    <img src="img/salad_buah.png" alt="">
-                </div>
-                <p>Paket</p>
-            </div>
-            <div class="category-card">
-                <div class="category-card-img">
-                    <img src="img/gado_gado.png" alt="">
-                </div>
-                <p>Makanan Berat</p>
-            </div>
-            <div class="category-card">
-                <div class="category-card-img">
-                    <img src="img/jaje.png" alt="">
-                </div>
-                <p>Jaje</p>
-            </div>
-            <div class="category-card">
-                <div class="category-card-img">
-                    <img src="img/es_teh.png" alt="">
-                </div>
-                <p>Minuman</p>
-            </div>
-        </div>
+        <?php include 'pages/category-header.html'; ?>
         <h1 class="top-header-text">Promo</h1>
         <div class="container-contents">
             <div class="promo-card">
@@ -92,7 +67,6 @@
                 </div>
                 <i class='bx bxs-plus-circle'></i>
             </div>
-
         </div>
         </div>
     </section>
