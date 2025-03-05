@@ -49,8 +49,8 @@
                 <p>Minuman</p>
             </div>
         </div>
-        <div class="promo-container">
-            <h1 class="top-header-text">Promo</h1>
+        <h1 class="top-header-text">Promo</h1>
+        <div class="container-contents">
             <div class="promo-card">
                 <div class="promo-content">
                     <h2>Penawaran Hari Ini</h2>
@@ -61,6 +61,39 @@
                     <img src="img/kumpulan_makanan.png">
                 </div>
             </div>
+        </div>
+        <h1 class="top-header-text">Popular</h1>
+        <div class="popular-container">
+            <div class="popular-card">
+                <div class="popular-card-img">
+                    <img src="img/nasi_campur_bali.png" alt="">
+                </div>
+                <div class="text-wrapper">
+                    <p class="food-card-name">
+                        Nasi Campur Bali
+                    </p>
+                    <p class="price-card">
+                        Rp 15.000,00
+                    </p>
+                </div>
+                <i class='bx bxs-plus-circle'></i>
+            </div>
+            <div class="popular-card">
+                <div class="popular-card-img">
+                    <img src="img/tipat_cantok.png" alt="">
+                </div>
+                <div class="text-wrapper">
+                    <p class="food-card-name">
+                        Tipat Cantok
+                    </p>
+                    <p class="price-card">
+                        Rp 25.000,00
+                    </p>
+                </div>
+                <i class='bx bxs-plus-circle'></i>
+            </div>
+
+        </div>
         </div>
     </section>
 
