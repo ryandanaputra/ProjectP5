@@ -1,3 +1,13 @@
+// function isMobile() {
+//   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+// }
+
+// window.onload = function () {
+//   if (!isMobile()) {
+//       document.body.innerHTML = "<h2 style='position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%);'>Access restricted to mobile devices only.</h2>";
+//   }
+// };
+
 document.addEventListener("DOMContentLoaded", function () {
   const categoryCards = document.querySelectorAll(".category-card");
 
